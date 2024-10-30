@@ -23,16 +23,19 @@ const Home = () => {
 
   return (
     <div>
-      <h1>Home Page</h1>
       {loading ? (
         <p>Loading news...</p>
       ) : (
         <div>
           {news.map((article, index) => (
             <div key={index} style={{ marginBottom: "20px" }}>
-                <img src={article.urlToImage} alt="" />
+              <h2>{article.author}</h2>
               <h2>{article.title}</h2>
               <p>{article.description}</p>
+              <h2>{article.url}</h2>
+              <img src={article.urlToImage} alt="" />
+              <h2>{article.publishedAt}</h2>
+              <h2>{article.content}</h2>
               <a href={article.url} target="_blank" rel="noopener noreferrer">
                 Read more
               </a>
