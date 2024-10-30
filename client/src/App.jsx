@@ -19,7 +19,7 @@ const App = () => {
   return (
     <BrowserRouter>
       <Routes>
-        <Route path="/" element={<Navigate to="/login" />} />
+        <Route path="/" element={<Navigate to="/signup" />} />
         <Route path="/login" element={<Login onLogin={handlelogin} />} />
         <Route path="/signup" element={<Signup onSignup={handlesignup} />} />
         <Route
