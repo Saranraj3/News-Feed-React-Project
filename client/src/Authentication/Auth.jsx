@@ -1,8 +1,8 @@
-import React from 'react';
-import { Navigate } from 'react-router-dom';
+import React from "react";
+import { Navigate } from "react-router-dom";
 
 const ProtectedRoute = ({ authenticated, component }) => {
-    return authenticated ? component : <Navigate to='/login' />
-}
+  return authenticated ? component : <Navigate to="/login" />;
+};
 
-export default ProtectedRoute
+export default ProtectedRoute;
