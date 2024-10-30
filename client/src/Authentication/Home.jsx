@@ -5,10 +5,12 @@ const Home = () => {
   const [news, setNews] = useState([]);
   const [loading, setLoading] = useState(true);
 
+  const API = import.meta.env.VITE_API_KEY;
+
   const fetchNews = async () => {
     try {
       const response = await axios.get(
-        "https://newsapi.org/v2/everything?q=tesla&from=2024-09-30&sortBy=publishedAt&apiKey=db54347d1b764dd09d73019d07d76f14"
+        `https://newsapi.org/v2/everything?q=tesla&from=2024-09-30&sortBy=publishedAt&apiKey=${API}`
       ); // replace with your API URL
       setNews(response.data.articles); // adjust this based on the API's response format
       setLoading(false);
