@@ -1,7 +1,5 @@
 # Logs
-./Home.jsx
-.Home.jsx
-Home.jsx
+.env
 logs
 *.log
 npm-debug.log*
