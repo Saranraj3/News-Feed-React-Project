@@ -33,7 +33,7 @@ const Login = ({ onLogin }) => {
           onChange={(e) => setPassword(e.target.value)}
         />
         <br />
-        <button className="mt-2 ml-5 bg-blue-500 rounded-md h-[2rem] w-[4rem]">
+        <button className="mt-2 ml-5 pl-2 bg-blue-500 rounded-md h-[2rem] w-[4rem]">
           Submit
         </button>
         <p className="mt-3 ml-5">
