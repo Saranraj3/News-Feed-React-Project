@@ -22,7 +22,7 @@ const Signup = ({ onSignup }) => {
     <div>
       <form onSubmit={handleSubmit}>
         <input
-          className="mt-5 ml-5 border border-black"
+          className="mt-5 ml-5 pl-2 border border-black"
           type="text"
           placeholder="First Name"
           value={FirstName}
@@ -30,7 +30,7 @@ const Signup = ({ onSignup }) => {
         />
         <br />
         <input
-          className="mt-3 ml-5 border border-black"
+          className="mt-3 ml-5 pl-2 border border-black"
           type="text"
           placeholder="Last Name"
           value={LastName}
@@ -38,7 +38,7 @@ const Signup = ({ onSignup }) => {
         />
         <br />
         <input
-          className="mt-3 ml-5  border border-black"
+          className="mt-3 ml-5 pl-2 border border-black"
           type="email"
           placeholder="Email"
           value={email}
@@ -46,7 +46,7 @@ const Signup = ({ onSignup }) => {
         />
         <br />
         <input
-          className="mt-3 ml-5  border border-black"
+          className="mt-3 ml-5 pl-2 border border-black"
           type="text"
           placeholder="Address"
           value={Address}
@@ -54,7 +54,7 @@ const Signup = ({ onSignup }) => {
         />
         <br />
         <input
-          className="mt-3 ml-5  border border-black"
+          className="mt-3 ml-5 pl-2 border border-black"
           type="text"
           placeholder="Nationality"
           value={Nationality}
@@ -62,14 +62,14 @@ const Signup = ({ onSignup }) => {
         />
         <br />
         <input
-          className="mt-3 ml-5  border border-black"
-          type="text"
+          className="mt-3 ml-5 pl-2 border border-black"
+          type="password"
           placeholder="Password"
           value={password}
           onChange={(e) => setPassword(e.target.value)}
         />
         <br />
-        <div className="mt-3 ml-5  flex">
+        <div className="mt-3 ml-5 pl-2 flex">
           <div className="flex">
             <p>Male</p>
             <input type="radio" name="radAnswer" />
