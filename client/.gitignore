@@ -1,4 +1,7 @@
 # Logs
+./Home.jsx
+.Home.jsx
+Home.jsx
 logs
 *.log
 npm-debug.log*
@@ -10,7 +13,7 @@ lerna-debug.log*
 node_modules
 dist
 dist-ssr
-*.local
+*.locals
 
 # Editor directories and files
 .vscode/*
